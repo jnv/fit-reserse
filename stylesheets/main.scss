@@ -90,7 +90,7 @@ figure p {
 }
 
 .post-meta {
-  @extend .delta;
+  @extend .epsilon;
 }
 .post-attribution, .post-published {
   margin: 0;
@@ -104,8 +104,19 @@ figure p {
   }
 }
 
-.post-content {
-  & > figure {
-    max-width: $max-width-fig;
+$figcaption-width: 250px;
+$figcaption-margin: 10px;
+
+@media screen and (min-width: $max-width + ($figcaption-width + $figcaption-margin + 10px) * 2 ) {
+  figure {
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    left: -($figcaption-width + $figcaption-margin);
+    top: 1ex;
+    width: $figcaption-width;
+    text-align: right;
   }
 }
+
