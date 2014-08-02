@@ -46,6 +46,17 @@ img {
   max-width: 100%;
 }
 
+.inline-def {
+  dt {
+    float: left;
+    clear: left;
+    margin-right: 0.4em;
+  }
+  dt:after {
+    content: ": "
+  }
+}
+
 @media screen and (min-width: 41em) {
   html {
     font-size: 130%;
