@@ -6,7 +6,7 @@
 body {
   margin: 0 auto;
   padding: 1em;
-  max-width: 42em;
+  max-width: 40em;
 }
 
 a {
@@ -29,7 +29,6 @@ a {
 }
 
 dl {
-  @include definition-list-style(dictionary-style);
 }
 dt {
   font-weight: bold;
@@ -37,4 +36,28 @@ dt {
 
 ul, ol {
   list-style-position: outside;
+}
+
+@media screen and (min-width: 41em) {
+  html {
+    font-size: 130%;
+  }
+}
+
+/************** posts *********************/
+
+.post-header {
+  padding-bottom: 1em;
+}
+
+.post-subtitle {
+  @extend .gamma;
+  font-style: italic;
+}
+
+.post-meta {
+  @extend .delta;
+}
+.post-attribution, .post-published {
+  margin: 0;
 }
