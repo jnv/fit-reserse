@@ -3,10 +3,12 @@
 @import "vars-typeplate";
 @import "typeplate";
 
+$max-width: 665px;
+$max-width-fig: 950px;
+
 body {
   margin: 0 auto;
   padding: 1em;
-  max-width: 40em;
 }
 
 a {
@@ -46,6 +48,15 @@ img {
   max-width: 100%;
 }
 
+figure {
+  padding: 0;
+  margin: 0 0 $indent-val;
+}
+
+figure p {
+  margin: 0;
+}
+
 .inline-def {
   dt {
     float: left;
@@ -59,7 +70,7 @@ img {
 
 @media screen and (min-width: 41em) {
   html {
-    font-size: 130%;
+    font-size: 125%;
   }
 }
 
@@ -79,4 +90,18 @@ img {
 }
 .post-attribution, .post-published {
   margin: 0;
+}
+
+.post-content, .post-header {
+  & > * {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.post-content {
+  & > figure {
+    max-width: $max-width-fig;
+  }
 }
