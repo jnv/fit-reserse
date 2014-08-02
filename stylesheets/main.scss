@@ -96,6 +96,11 @@ figure p {
   margin: 0;
 }
 
+.post-toc > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .post-content, .post-header {
   & > * {
     max-width: $max-width;
