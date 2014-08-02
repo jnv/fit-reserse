@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: pretty
-safe: true
+# safe: true
 exclude: [Gemfile, Gemfile.lock, Guardfile, README.md]
 timezone: Europe/Prague
 
@@ -15,6 +15,9 @@ kramdown:
   header_offset: 1
   parse_block_html: true
   # transliterated_header_ids: true
+
+sass:
+  sass_dir: _sass
 
 defaults:
   -

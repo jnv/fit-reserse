@@ -1,0 +1,40 @@
+---
+---
+@import "vars-typeplate";
+@import "typeplate";
+
+body {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 42em;
+}
+
+a {
+  color: #0645ad;
+  &:visited {
+    color: #0b0080;
+  }
+  &:hover{
+    color: #06e;
+  }
+  &:active{
+    color:#faa700;
+  }
+  &:focus{
+    outline: thin dotted;
+  }
+  &:hover, &:active{
+    outline: 0;
+  }
+}
+
+dl {
+  @include definition-list-style(dictionary-style);
+}
+dt {
+  font-weight: bold;
+}
+
+ul, ol {
+  list-style-position: outside;
+}
