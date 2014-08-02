@@ -1,0 +1,25 @@
+markdown: kramdown
+permalink: pretty
+safe: true
+exclude: [Gemfile, Gemfile.lock, Guardfile, README.md]
+timezone: Europe/Prague
+
+permalink: :year-:month-:title/
+
+markdown:    kramdown
+kramdown:
+  auto_ids: true
+  entity_output: as_input
+  toc_levels: 1..2
+  smart_quotes: sbquo,lsquo,bdquo,ldquo
+  header_offset: 1
+  parse_block_html: true
+  # transliterated_header_ids: true
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "post"
+    values:
+      layout: "post"
