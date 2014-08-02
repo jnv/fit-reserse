@@ -6,6 +6,8 @@ timezone: Europe/Prague
 
 permalink: :year-:month-:title/
 
+baseurl: ""
+
 markdown:    kramdown
 kramdown:
   auto_ids: true
