@@ -125,3 +125,8 @@ $figcaption-margin: 10px;
   }
 }
 
+@media print {
+  html {
+    font-size: 12pt;
+  }
+}
